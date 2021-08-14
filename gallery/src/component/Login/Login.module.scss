@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    label {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.5s;
+    }
+
+    input {
+      &:placeholder-shown + label {
+        transform: translateY(-130%);
+        display: inline-block;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+}

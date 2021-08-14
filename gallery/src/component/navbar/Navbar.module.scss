@@ -1,0 +1,21 @@
+.container {
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .authbtn {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 1rem;
+
+    &__signup {
+      background-color: rgb(68, 177, 68);
+
+      &:hover {
+        background-color: rgb(32, 224, 32);
+      }
+    }
+  }
+}
